@@ -1,0 +1,12 @@
+App As appinfo:
+    BackEnabled: =false
+
+    SharePointIntegration As hostControl.SharePointHostControlVariant:
+        DataSource: =[@SiteRequests]
+        OnCancel: =ResetForm(Form_SiteTitle)
+        OnEdit: =EditForm(Form_SiteTitle)
+        OnNew: =NewForm(Form_SiteTitle)
+        OnSave: =SubmitForm(Form_SiteTitle)
+        OnView: =ViewForm(Form_SiteTitle)
+        SelectedHidden: =LookUp([@SiteRequests], ID = Self.SelectedListItemID)
+

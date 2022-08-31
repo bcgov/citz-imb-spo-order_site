@@ -1,0 +1,31 @@
+{
+  "081ea710-bff5-4708-80fa-cf3f3ba353b9": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "bypassConsent": true,
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1591/1.0.1591.2961/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://bcgov.sharepoint.com/sites/CITZ-SPO_Project": {
+        "dataSources": {
+          "SiteRequests": {
+            "tableName": "6fe556ec-37ed-4252-b639-fb0229a6a858"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "SiteRequests"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "081ea710-bff5-4708-80fa-cf3f3ba353b9"
+  }
+}
